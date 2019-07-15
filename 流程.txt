@@ -1,0 +1,11 @@
+app.vue
+	1、computed:{
+			cartList(){
+				return this.$store.state.cartList;
+			}
+		}
+list.vue
+	1、mounted：this.$store.dispatch("getProductList")
+main.js
+	2、actions:getProductList(context)
+	
